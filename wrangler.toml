@@ -19,12 +19,5 @@ R2_PUBLIC_URL = "https://twikoo.r2.959577.xyz"
 [dev]
 port = 5000
 
-[triggers]
-routes = ["https://twikoo.959577.xyz/*"]
-
-[cors]
-allowed_origins = ["https://blog.wxiao2.com"]
-allowed_methods = ["GET", "POST", "OPTIONS"]
-allowed_headers = ["*"]
-allow_credentials = true
-max_age = 86400
+[observability]
+enabled = false
