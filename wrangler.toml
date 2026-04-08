@@ -20,4 +20,8 @@ R2_PUBLIC_URL = "https://twikoo.r2.959577.xyz"
 port = 5000
 
 [observability]
-enabled = false
+[observability.logs]
+enabled = true
+invocation_logs = true
+
+[observability.traces]
