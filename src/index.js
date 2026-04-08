@@ -480,6 +480,11 @@ function allowCors (request, headers) {
 }
 
 function getAllowedOrigin (origin) {
+  // ========== 添加的调试代码开始 ==========
+  console.log(`[DEBUG CORS] 入参 origin: ${origin}`);
+  console.log(`[DEBUG CORS] 当前 config 对象:`, config);
+  console.log(`[DEBUG CORS] 检查的 config.CORS_ALLOW_ORIGIN: ${config?.CORS_ALLOW_ORIGIN}`);
+  // ========== 添加的调试代码结束 ==========
   const localhostRegex = /^https?:\/\/(localhost|127\.0\.0\.1|0\.0\.0\.0)(:\d{1,5})?$/
   if (localhostRegex.test(origin)) { // 判断是否为本地主机，如是则允许跨域
     return origin // Allow
