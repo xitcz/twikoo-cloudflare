@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "twikoo-cloudflare"
+name = "cf-create-worker"
 main = "src/index.js"
 compatibility_flags = ["nodejs_compat"]
 compatibility_date = "2024-09-23"
